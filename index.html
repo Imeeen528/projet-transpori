@@ -1,66 +1,290 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
 
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500&display=swap" rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
 
-    <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e13ca608b1.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link rel="shortcut icon" href="logo.png" />
+    <title>TRANSPORI</title>
+</head>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    
-    <!-- Style CSS -->
-    <link rel="stylesheet" href="css/style.css">
-
-    <title>Footer 09</title>
-  </head>
-  <body>
-    
-    <footer class="footer-16371">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-md-9 text-center">
-            <div class="footer-site-logo mb-4">
-              <a href="#">TRANSPORI</a>
+<body>
+    <nav class="navbar">
+        <div class="brand-title"></div>
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <a class="navbar-brand" href="/">
+            <div class="logo-image">
+                <img src="logo.png" class="img-fluid" width="75" height="46" ALT="align box" ALIGN=CENTER>
             </div>
-            <ul class="list-unstyled nav-links mb-5">
-              <li><a href="#">About</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Legal</a></li>
-              <li><a href="#">Contact</a></li>
+        </a>
+        <div class="navbar-links">
+            <ul>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#features">Services</a></li>
+                <li><a href="#cnt">Contact</a></li>
+
             </ul>
-
-            <div class="social mb-4">
-              <h3>Stay in touch</h3>
-              <ul class="list-unstyled">
-                <li class="in"><a href="#"><span class="icon-instagram"></span></a></li>
-                <li class="fb"><a href="#"><span class="icon-facebook"></span></a></li>
-                <li class="tw"><a href="#"><span class="icon-twitter"></span></a></li>
-                <li class="pin"><a href="#"><span class="icon-pinterest"></span></a></li>
-                <li class="dr"><a href="#"><span class="icon-dribbble"></span></a></li>
-              </ul>
-            </div>
-
-            <div class="copyright">
-              <p class="mb-0"><small>&copy; TRANSPORI. All Rights Reserved.</small></p>
-            </div>
-
-
-          </div>
         </div>
-      </div>
+        <div class="icons">
+            <i class="fas fa-user" id="login-btn"></i>
+        </div>
+
+    </nav>
+
+
+
+
+    <div class="login-form-container">
+        <i class="far fa-times-circle" id="form-close"></i>
+        <form action="">
+            <h2>Login</h2>
+            <input type="email" class="box" placeholder="Entrer votre email..">
+            <input type="password" class="box" placeholder="Entrer votre mot de passe..">
+            <input type="submit" class="btn" value="login now">
+            <input type="checkbox" id="remember">
+            <label for="remember me">Remember me</label>
+            <p>mot de passe oublié?</p> <a href="#">Cliquer ici</a></p>
+            <p>Vous n'avez pas de compte ?> <a href="#">S'inscrire maintenant</a></p>
+
+        </form>
+    </div>
+
+
+
+
+    <img class="image" src="home.jpg" alt="">
+
+    <h1 class="animation" style="font-size: 90px ; color:#252b42;"></h1>
+    <h1 class="kl" style="font-size: 70px; color:#252b42;">sans bouger de chez vous ! </h1>
+
+
+    <div class="row" id="kll">
+        <div class="column" style="background-color: whitesmoke; "> <a style="color: black;"
+                href="covoiturage.html">Covoiturage</a> </div>
+        <div class="column" style="background-color: #d5c5c5; "> <a style="color: black;" href="transporteur.html">Transporteur</a>
+        </div>
+        <div class="column"> <a style="color: black;" href="index2.html">Zone rurale</a> </div>
+    </div>
+
+
+    <!-- Start Features -->
+    <div class="features" id="features">
+        <h2 class="main-title">Services</h2>
+        <div class="container">
+            <div class="box quality">
+                <div class="img-holder"><img src="cov.jpg" alt="" /></div>
+                <h2>Covoiturage</h2>
+                <p>Prenez le volant et soyez payé, conduisez sur la plate-forme avec le plus grand r&seau de coureurs
+                    actifs </p>
+                <a href="covoiturage.html">En savoir plus</a>
+            </div>
+            <div class="box time">
+                <div class="img-holder"><img src="trans.jpg" alt="" /></div>
+                <h2>Transporteur</h2>
+                <p>Évitez les voyages avec un camion à vide. Trouvez des milliers de chargements réels pour les camions dans toute l'Europe.</p>
+                <a href="transporteur.html">En savoir plus</a>
+            </div>
+            <div class="box passion">
+                <div class="img-holder"><img src="taxi.jpg" alt=""></img></div>
+                <h2>Zone Rurale</h2>
+                <p>la plus facile plate-forme pour mettre en contact les citoyens rurale avec les transporteurs</p>
+                <a href="index2.html">En savoir plus</a>
+            </div>
+        </div>
+    </div>
+    <!-- End Features -->
+    <!-- bootstrap popup -->
+
+
+
+    <!-- bootstrap popup -->
+
+    <!-- form contact us -->
+    <div class="contact-us" id="cnt">
+
+        <h2 class="main-title" style="color: #252b42;">Nous contacter </h2>
+        <div class="container">
+            <div class="formBx">
+                <form action="send.php" method="post" onsubmit="sent()">
+
+                    <div class="inputbox">
+                        <input type="text" name="nom" required="required">
+                        <span>Nom et Prénom</span>
+                    </div>
+                    <div class="inputbox">
+                        <input type="email" name="email" required="required">
+                        <span>Email</span>
+                    </div>
+                    <div class="inputbox">
+                        <input type="text" name="objet" required="required">
+                        <span>Objet</span>
+                    </div>
+                    <div class="inputbox">
+                        <textarea required="required" name="message"></textarea>
+                        <span>Ecrire votre message ici. . .</span>
+                    </div>
+                    <div class="inputbox">
+                        <input type="submit" value="Envoyer" name="submit">
+                    </div>
+                </form>
+            </div>
+            <div class="imgbox">
+                <img src="Contact us-bro.png">
+            </div>
+        </div>
+    </div>
+
+
+    <br><br><br>
+    <!-- footer -->
+    <footer style="background-color: #252b42;">
+        <div class="content" style="background-color: #252b42;">
+            <div class="left box">
+                <div class="upper">
+                    <img src="logo.png" width="150px" alt="">
+                    <div class="topic">A propos de nous</div>
+                    <p>Transpori est une plate-forme où vous pouvez covoiturer,
+                        livrer des matériaux ou même prendre le volant
+                        et être payé. Nous offrons même aux citoyens ruraux
+                        la possibilité de prendre contact avec les transports disponibles.</p>
+                </div>
+                <div class="lower">
+                    <div class="topic">Contacter Nous </div>
+                    <div class="phone">
+                        <a href="#"><i class="fas fa-phone-volume"></i>+216 52 807 598</a>
+                    </div>
+                    <div class="email">
+                        <a href="#"><i class="fas fa-envelope"></i>Transpori@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+            <div class="middle box">
+                <div class="topic">Nos services</div>
+                <div><a href="#">covoiturage : se faire lifter ou gagner de l'argent.</a></div>
+                <div><a href="#">transporteurs : gagnez de l'argent supplémentaire grâce à votre travail quotidien.</a>
+                </div>
+                <div><a href="#">zones rurales : contactez les transports.</a></div>
+
+            </div>
+
+        </div>
+        <div class="bottom">
+            <p>Droits d'auteur © 2022 <a href="#">TRANSPORI</a> Tous les droits sont réservés</p>
+        </div>
     </footer>
 
+</body>
 
-    
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-  </body>
 </html>
+
+
+
+
+
+
+
+
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+
+
+
+</body>
+
+</html>
+<script>
+    const toggleButton = document.getElementsByClassName('toggle-button')[0]
+    const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+
+    toggleButton.addEventListener('click', () => {
+        navbarLinks.classList.toggle('active')
+    })
+    let searchBar = document.querySelector('.search-bar-container');
+    let formBtn = document.querySelector('#login-btn');
+    let loginForm = document.querySelector('.login-form-container');
+    let formClose = document.querySelector('#form-close');
+    window.onscroll = () => {
+        loginForm.classList.remove('active');
+    }
+
+    formBtn.addEventListener('click', () => {
+        loginForm.classList.add('active');
+    });
+
+    formClose.addEventListener('click', () => {
+        loginForm.classList.remove('active');
+    });
+    // typing text animation script
+    // var typed = new Typed(".typing", {
+    //     strings: ["Covoiturer", "Blogger", "Designer", "Freelancer", "Insta5rameuse"],
+    //     typeSpeed: 100,
+    //     backSpeed: 60,
+    //     loop: true
+    // });
+    document.addEventListener('DOMContentLoaded', function (event) {
+        // array with texts to type in typewriter
+        var dataText = ["Covoiturer.", "Transporter.", "Livrer."];
+
+        // type one text in the typwriter
+        // keeps calling itself until the text is finished
+        function typeWriter(text, i, fnCallback) {
+            // chekc if text isn't finished yet
+            if (i < (text.length)) {
+                // add next character to h1
+                document.querySelector("h1").innerHTML = text.substring(0, i + 1) + '<span aria-hidden="true"></span>';
+
+                // wait for a while and call this function again for next character
+                setTimeout(function () {
+                    typeWriter(text, i + 1, fnCallback)
+                }, 100);
+            }
+            // text finished, call callback if there is a callback function
+            else if (typeof fnCallback == 'function') {
+                // call callback after timeout
+                setTimeout(fnCallback, 700);
+            }
+        }
+        // start a typewriter animation for a text in the dataText array
+        function StartTextAnimation(i) {
+            if (typeof dataText[i] == 'undefined') {
+                setTimeout(function () {
+                    StartTextAnimation(0);
+                }, 20000);
+            }
+            // check if dataText[i] exists
+            if (i < dataText[i].length) {
+                // text exists! start typewriter animation
+                typeWriter(dataText[i], 0, function () {
+                    // after callback (and whole text has been animated), start next text
+                    StartTextAnimation(i + 1);
+                });
+            }
+        }
+        // start the text animation
+        StartTextAnimation(0);
+    });
+    function sent() {
+
+        alert('We will contact you soon !');
+    }
+
+
+
+</script>
